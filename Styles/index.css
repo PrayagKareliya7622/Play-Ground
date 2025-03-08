@@ -1,3 +1,48 @@
-h1{
-    color: Red;
+/* This is Navigation Style */
+
+header .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: transparent;
+    max-width: 90vw;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+header .navbar .logo a{
+    color : #ffff;
+    font-size: 2.5rem;
+}
+
+header .navbar .nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+}
+
+.navbar .nav-links a{
+    color: #ffff;
+    transition: 0.7s ease-in-out;
+}
+
+.nav-links li a:hover{
+    color: #eaf554;
+}
+
+@media screen and (max-width: 365px) {
+    header .navbar{
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .navbar .nav-links{
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
 }
